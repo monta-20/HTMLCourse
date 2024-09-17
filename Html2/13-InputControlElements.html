@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Text</h1>
+    <input type="text" size="50">
+    <h1>If you need a multi-line text input</h1>
+    <textarea name="area1" id="ar"></textarea>
+    <h1> Checkbox and Radio Buttons</h1>
+      
+      <input type="radio" name="color" id ="red" value="#F00">
+      <input type="radio" name="color" id ="green" value="#0F0">
+      <input type="radio" name="color" id ="blue" value="#00F">
+      <h2>Checked</h2>
+      <input type="checkbox" checked>
+      <h2>Label</h2>
+      <label>
+        <input type="radio" name="color" id ="red" value="#F00">
+          red
+      </label>
+
+      <input type="radio" name="color" id ="red" value="#F00">
+      <label for="red">RED</label>
+
+      <h2>Button Groups</h2>
+      <fieldset>
+        <legend>Theme color:</legend>
+        <p>
+        <input type="radio" name="color" id="red" value="#F00">
+        <label for="red">Red</label>
+        </p>
+        <p>
+        <input type="radio" name="color" id="green" value="#0F0">
+        <label for="green">Green</label>
+        </p>
+        <p>
+        <input type="radio" name="color" id="blue" value="#00F">
+        <label for="blue">Blue</label>
+        </p>
+       </fieldset>
+    <h1>Input Validation</h1>  
+       <h2>Required</h2> 
+       <input type="text" required>
+       <h2>Minimum / Maximum Length</h2>
+       <input type="text" minlength="3" maxlength="15">
+       <h2>Specifying a range</h2>
+       <input type="number" name="marks" size="6" min="0" max="100" id="num">
+       <label for="num">Number Betwwen 0 and 100</label>
+       </br>
+       <input type="range" size="2" name="feedback" min="1" max="5" id="ran">
+       <label for="ran">Rate Betwwen 1 and 5</label>
+       <h2>Match a Pattern</h2>
+       <input pattern="\d" title="Number only , please.">
+        </br>
+        <h2>Form Validateur Example</h2>
+       <form>
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <input pattern="\d*" name="number" required>
+        <input type="submit" value="Publish"> <!-- form will be validated -->
+        <input type="submit" value="Save" formnovalidate> <!-- form will NOT be validated -->
+       </form>
+    <h1>color</h1>   
+       <input type="color">
+    <h1>Password</h1>
+       <input type="password" name="password" id="pssw" placeholder="password">
+    <h1>File</h1>   
+       <input type="file">
+       <h2>Multiple files</h2>
+       <input type="file" multiple>
+       <h2>Accept files</h2>
+       <input type="file" name="fileSubmission" accept="image/x-png,image/gif,image/jpeg" />
+    <h1>Button</h1>
+       <button type="submit">Submit</button>
+    <h1>Select Box</h1>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="tunisia">Tunisia</option>
+            <option value="canada">Canada</option>
+            <option value="france">France</option>
+        </select>
+    <h1>Range Number</h1> 
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100">
+      
+
+
+       
+
+       
+
+
+      
+      
+</body>
+</html>
